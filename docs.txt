@@ -1,0 +1,76 @@
+npx create-react-native-app -t with-typescript
+npx expo start
+
+************************************
+- cd job-finder
+- npm run android
+- npm run ios # you need to use macOS to build the iOS project - use the Expo app if you need to do iOS development without a Mac
+- npm run web
+************************************
+Issues  
+************************************
+>> Make sure no non-english in the root dir 
+OR
+>> expo-cli start --tunnel 
+
+************************************
+Routing 
+************************************
+* it can be done with Pressable, Link 
+
+https://docs.expo.dev/router/introduction/
+
+>> npx expo install expo-router react-native-safe-area-context react-native-screens expo-linking expo-constants expo-status-bar
+
+************************************
+Shortcuts 
+************************************
+
+rnc: This Code Snippet creates a new React Native component with a default template
+rnf: This Code Snippet creates a new React Native functional component with a default template
+
+
+************************************
+dynamic routes
+************************************
+
+uselocalsearchparams() 
+usesearchparams()
+
+************************************
+Components
+************************************
+View 
+Text 
+Stack vs Tabs 
+Stack.Screen
+KeyboardAvoidingView
+TouchableOpacity 
+TextInput 
+
+
+************************************
+To Ask
+************************************
+* Middleware 
+* styling 
+
+************************************
+Figma to Reactnative
+************************************
+
+1- getting fonts and download them to assets 
+2- npx expo install expo-font
+3-  in app.json 
+{
+  "expo": {
+    "plugins": [
+      [
+        "expo-font",
+        {
+          "fonts": ["path/to/file.ttf"]
+        }
+      ]
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "Expo Router Typescript",
+    "slug": "expo-router-typescript",
+    "scheme": "todo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "splash": {
+      "backgroundColor": "#222"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#222"
+      },
+      "package": "com.haytherecharlie.exporoutertypescript"
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/roboto/Roboto-Black.ttf",
+            "./assets/fonts/roboto/Roboto-Bold.ttf",
+            "./assets/fonts/roboto/Roboto-Light.ttf",
+            "./assets/fonts/roboto/Roboto-Medium.ttf",
+            "./assets/fonts/roboto/Roboto-Regular.ttf"
+          ]
+        }
+      ],
+      ["expo-router"]
+    ],
+    "extra": { "router": { "origin": false } }
+  }
+}
